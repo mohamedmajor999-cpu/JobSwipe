@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JobSwipe MVP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="top-switcher">
+        <button class="mode-btn active" data-mode="swipe">Swipe Stack</button>
+        <button class="mode-btn" data-mode="pulse">Live Pulse</button>
+      </header>
+
+      <section class="phone" id="swipe-screen" aria-label="Swipe Stack screen">
+        <div class="screen-header">
+          <button class="circle-btn">👤</button>
+          <div class="title-wrap">
+            <h1>Swipe Stack</h1>
+            <p><span class="dot"></span>LIVE DISPATCH</p>
+          </div>
+          <button class="circle-btn">⚙️</button>
+        </div>
+
+        <article class="map-card">
+          <div class="badge">IMMEDIATE START</div>
+          <button class="info-btn">i</button>
+
+          <div class="job-copy">
+            <p class="area">Marseille District</p>
+            <h2>Line Cook at <span>Vieux-Port</span></h2>
+            <p class="rate">22€ <small>/h</small></p>
+          </div>
+
+          <div class="meta-row">
+            <div class="meta-card">
+              <p class="meta-icon">🚶</p>
+              <p class="meta-main">7 min</p>
+              <p class="meta-label">WALK TIME</p>
+            </div>
+            <div class="meta-card">
+              <p class="meta-icon">📅</p>
+              <p class="meta-main">Tomorrow</p>
+              <p class="meta-label">STARTS</p>
+            </div>
+          </div>
+        </article>
+
+        <div class="action-row">
+          <button class="action reject">✕</button>
+          <button class="action accept">✓</button>
+          <button class="action save">★</button>
+        </div>
+
+        <nav class="bottom-nav">
+          <a class="active" href="#">Jobs</a>
+          <a href="#">Chats</a>
+          <a href="#">My Shifts</a>
+          <a href="#">Profile</a>
+        </nav>
+      </section>
+
+      <section class="phone hidden" id="pulse-screen" aria-label="Live Pulse screen">
+        <div class="screen-header">
+          <button class="circle-btn">☰</button>
+          <div class="title-wrap">
+            <h1>Live Pulse</h1>
+          </div>
+          <button class="circle-btn">🔔</button>
+        </div>
+
+        <article class="radar-card">
+          <div class="radar-head">
+            <div>
+              <p class="muted">CANDIDATE RADAR</p>
+              <h2>Marseille, FR</h2>
+            </div>
+            <div class="pill">● LIVE</div>
+          </div>
+          <div class="radar-map">
+            <div class="circle c1"></div>
+            <div class="circle c2"></div>
+            <div class="circle c3"></div>
+            <button class="dispatch">Dispatch All</button>
+          </div>
+        </article>
+
+        <div class="roles-head">
+          <h2>Open Roles</h2>
+          <a href="#">View All →</a>
+        </div>
+
+        <div class="roles-grid">
+          <article class="role-card">
+            <p class="tag urgent">URGENT</p>
+            <h3>Server</h3>
+            <p>4 spots open</p>
+          </article>
+          <article class="role-card">
+            <p class="tag">STANDARD</p>
+            <h3>Barista</h3>
+            <p>2 spots open</p>
+          </article>
+        </div>
+
+        <article class="mixologist">
+          <div>
+            <h3>Mixologist</h3>
+            <p>Vieux-Port Location</p>
+          </div>
+          <span>+5</span>
+        </article>
+
+        <button class="instant-dispatch">⚡ Instant Dispatch</button>
+
+        <nav class="bottom-nav">
+          <a class="active" href="#">Pulse</a>
+          <a href="#">Jobs</a>
+          <a href="#">+</a>
+          <a href="#">Messages</a>
+          <a href="#">Profile</a>
+        </nav>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

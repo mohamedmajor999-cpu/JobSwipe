@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JobSwipe - Lancer la prévisualisation</title>
+    <style>
+      :root {
+        --bg: #030d2a;
+        --card: #101f44;
+        --text: #f1f5ff;
+        --accent: #14ff4e;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Inter, system-ui, sans-serif;
+        background: radial-gradient(circle at top, #0a1642, var(--bg) 48%);
+        color: var(--text);
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+
+      .card {
+        width: min(100%, 460px);
+        background: var(--card);
+        border: 1px solid rgba(180, 200, 232, 0.2);
+        border-radius: 22px;
+        padding: 24px;
+        text-align: center;
+      }
+
+      h1 { margin-top: 0; }
+      p { color: #9fb0cb; }
+
+      .preview-btn {
+        display: inline-block;
+        margin-top: 12px;
+        text-decoration: none;
+        background: var(--accent);
+        color: #02240f;
+        font-weight: 800;
+        padding: 14px 24px;
+        border-radius: 999px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <h1>JobSwipe MVP</h1>
+      <p>Clique simplement sur le bouton ci-dessous pour ouvrir la prévisualisation.</p>
+      <a class="preview-btn" href="index.html">▶️ Prévisualiser l'application</a>
+    </main>
+  </body>
+</html>
